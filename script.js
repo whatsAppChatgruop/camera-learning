@@ -20,3 +20,16 @@ function openCamera() {
     });
 
 }
+function takePhoto() {
+
+    const video = document.getElementById("video");
+    const canvas = document.getElementById("canvas");
+
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+
+    const context = canvas.getContext("2d");
+
+    context.drawImage(video, 0, 0);
+
+}
