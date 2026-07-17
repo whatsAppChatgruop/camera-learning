@@ -4,7 +4,14 @@ let photo = document.getElementById("photo");
 let status = document.getElementById("status");
 
 let stream = null;
+function acceptPermission(){
 
+    document.getElementById("permissionBox").style.display="none";
+
+    document.getElementById("status").innerHTML =
+    "رضایت ثبت شد، می‌توانید دوربین را فعال کنید ✅";
+
+}
 
 // فعال کردن دوربین
 function openCamera() {
