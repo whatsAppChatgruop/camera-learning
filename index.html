@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Camera Permission Test</title>
+    <title>Camera Learning</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
+
 <body>
-    <h1>آزمایش دسترسی دوربین</h1>
-    <button onclick="openCamera()">باز کردن دوربین</button>
 
-    <br><br>
+<h1>آموزش دوربین با اجازه کاربر</h1>
 
-    <video id="video" width="320" autoplay></video>
+<button onclick="openCamera()">فعال کردن دوربین</button>
 
-<script>
-function openCamera() {
-    navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function(stream) {
-        document.getElementById("video").srcObject = stream;
-    })
-    .catch(function(error) {
-        alert("دسترسی به دوربین داده نشد");
-    });
-}
-</script>
+<br><br>
+
+<video id="video" autoplay playsinline></video>
+
+<script src="script.js"></script>
 
 </body>
 </html>
