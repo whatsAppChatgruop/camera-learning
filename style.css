@@ -24,3 +24,6 @@ video, canvas, img {
     border-radius: 12px;
     margin-top: 15px;
 }
+body {
+    background: red;
+}
