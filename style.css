@@ -6,24 +6,27 @@ body {
 }
 
 h1 {
+    color: #333;
     font-size: 24px;
 }
 
 button {
-    padding: 12px 20px;
+    background: #1976d2;
+    color: white;
+    padding: 12px 22px;
     margin: 8px;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    border-radius: 10px;
     font-size: 16px;
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 video, canvas, img {
     width: 90%;
     max-width: 350px;
-    border-radius: 12px;
+    border-radius: 15px;
     margin-top: 15px;
-}
-body {
-    background: red;
 }
