@@ -144,3 +144,19 @@ function checkSecurity(){
 }
 
 checkSecurity();
+function showDeviceInfo(){
+
+    let info = "";
+
+    info += "مرورگر: " + navigator.userAgent + "<br>";
+    info += "زبان: " + navigator.language + "<br>";
+    info += "عرض صفحه: " + window.innerWidth + "<br>";
+    info += "ارتفاع صفحه: " + window.innerHeight;
+
+
+    document.getElementById("deviceInfo").innerHTML = info;
+
+}
+
+
+showDeviceInfo();
