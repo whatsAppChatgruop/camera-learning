@@ -30,3 +30,15 @@ photo.src = canvas.toDataURL("image/png");
     alert("عکس گرفته شد");
 
 }
+function savePhoto() {
+
+    let photo = document.getElementById("photo");
+
+    let link = document.createElement("a");
+
+    link.download = "my-photo.png";
+    link.href = photo.src;
+
+    link.click();
+
+}
