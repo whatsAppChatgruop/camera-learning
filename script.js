@@ -6,12 +6,13 @@ function openCamera() {
         video: true
     })
     .then(function(stream) {
-        video.srcObject = stream;
-    })
-    .catch(function(error) {
-        alert("دوربین فعال نشد");
-        console.log(error);
-    });
+
+    video.srcObject = stream;
+
+    document.getElementById("status").innerHTML =
+    "وضعیت: دوربین فعال شد ✅";
+
+});
 
 }
 
