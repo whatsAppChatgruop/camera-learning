@@ -18,7 +18,17 @@
 <h1>📷 آموزش دوربین</h1>
 
 <p id="status">وضعیت: آماده</p>
+<div id="permissionBox">
 
+<p>
+برای استفاده از دوربین، لطفاً اجازه دهید.
+</p>
+
+<button onclick="acceptPermission()">
+تأیید و ادامه
+</button>
+
+</div>
 <button onclick="openCamera()">فعال کردن دوربین</button>
 <button onclick="stopCamera()">خاموش کردن دوربین</button>
 <video id="video" autoplay playsinline></video>
