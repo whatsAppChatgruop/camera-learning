@@ -98,3 +98,19 @@ function savePhoto() {
     status.innerHTML = "وضعیت: عکس ذخیره شد ✅";
 
 }
+function stopCamera() {
+
+    if (stream) {
+
+        stream.getTracks().forEach(track => {
+            track.stop();
+        });
+
+        video.srcObject = null;
+
+        status.innerHTML =
+        "وضعیت: دوربین خاموش شد 🔴";
+
+    }
+
+}
