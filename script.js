@@ -121,3 +121,26 @@ function stopCamera() {
     }
 
 }
+function checkSecurity(){
+
+    let info = "";
+
+    if(location.protocol === "https:"){
+        info += "✅ اتصال امن HTTPS فعال است<br>";
+    }else{
+        info += "⚠️ اتصال HTTPS فعال نیست<br>";
+    }
+
+
+    if(navigator.mediaDevices){
+        info += "✅ مرورگر از Media Devices پشتیبانی می‌کند";
+    }else{
+        info += "❌ پشتیبانی موجود نیست";
+    }
+
+
+    document.getElementById("security").innerHTML = info;
+
+}
+
+checkSecurity();
