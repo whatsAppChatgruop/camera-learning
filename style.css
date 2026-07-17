@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    margin-top: 40px;
+}
+
+video {
+    border-radius: 10px;
+    width: 320px;
+}
