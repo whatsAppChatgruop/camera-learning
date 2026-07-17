@@ -25,7 +25,8 @@ function takePhoto() {
     canvas.height = video.videoHeight;
 
     context.drawImage(video, 0, 0);
-
+let photo = document.getElementById("photo");
+photo.src = canvas.toDataURL("image/png");
     alert("عکس گرفته شد");
 
 }
